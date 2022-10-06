@@ -22,9 +22,9 @@ h1, h3, p{
 }
     
 .myWeek1{
-    margin: auto;
-    max-width: 600px;
-    background-color: rgb(187, 184, 180);
+    margin: auto; 
+    max-width: 700px;
+    background-color: rgb(255, 241, 224);
     border: solid;
     border-radius: 5px
 }
@@ -33,12 +33,18 @@ h1, h3, p{
 /* Set the apperance of the class, chart */
 .chart{
     background-color: white;
-    width:440px;
+    width:485px;
     border-width: 5px;
     border-style: solid;
     border-radius: 5px;
     border-color: rgb(48, 38, 38);
+    position: relative;
+    left: 105px;
 
     
 }
+a{
+    text-align: center;
+}
+    
     
