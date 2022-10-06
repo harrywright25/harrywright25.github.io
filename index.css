@@ -44,7 +44,20 @@ h1, h3, p{
     
 }
 a{
-    text-align: center;
+    border: 3px;
+    border-color: black;
+    border-radius: 3px;
+    border-style: solid;
+    margin:auto
 }
+
+#link1{
+    font-family: 'Roboto', sans-serif;
+    padding:4px;
     
+
+
+}
+
+/* a{} relates to all html <a> commands, whereas #link1 for example relates to the specific id given to just one of them. */
     
