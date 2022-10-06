@@ -32,8 +32,7 @@ h1, h3, p{
     border-style: solid;
     border-radius: 5px;
     border-color: rgb(48, 38, 38);
-    position: relative;
-    left: 105px;
+    
 }
 
 .chart1{
@@ -43,6 +42,5 @@ h1, h3, p{
     border-style: solid;
     border-radius: 5px;
     border-color: rgb(48, 38, 38);
-    position: relative;
-    left: 92px;
+    
 }
