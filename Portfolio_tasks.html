@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title for the page -->
+    <title>Portfolio</title>
+
+    <!-- Link to my style sheet -->
+    <link rel="stylesheet" href="Portfolio.css">
+
+    <!--The next three lines allow the Vega embed-->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+</head>
+
+<body>
+    <!-- First create a div for week 2 -->
+    <div class ="portfolio">
+        <h1>Portfolio</h1>
+    
+        <h3>Week 1</h3>
+        
+        <p>The first chart tracks forest area by country.</p>
+        <div class="chart" id="Forest_area"></div>
+
+        
+        <p>My second chart looks at carbon emissions per capita by region</p>
+        <div class="chart" id="Carbon_per_capita"> </div>
+
+
+         <h3>Week 2</h3>    
+        <p>This chart looks at IMf lending outstanding by all members, in nominal terms</p>
+        
+        <div class="chart" id="IMF_lendingoutstanding"></div>
+       
+        <p>This chart shows IMF lending outstanding by all members, as a proportion of World GDP </p>>
+        <div class="chart1" id="IMF_lending"></div>
+        
+        
+    </div> 
+</body>
+    
+    
+<script>
+        //Define charts:
+        var myChart1 = "EnvChart1.json"
+        var myChart2 = "Envchart2.json"
+        var myChart3= "IMF_lendingoutstanding.json"
+        var myChart4 = "IMF_lending.json";
+        
+        
+        // Embed charts:
+        
+        vegaEmbed('#Forest_area', myChart1);
+        vegaEmbed('#Carbon_per_capita', myChart2)
+        vegaEmbed('#IMF_lendingoutstanding', myChart3);
+        vegaEmbed('#IMF_lending', myChart4)
+        
+</script>
+
+</html>

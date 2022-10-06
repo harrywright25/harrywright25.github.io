@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+/* Set the background color for my page: */
+body{
+    background-color: rgb(255, 255, 255);
+ 
+}
+
+
+/* Choose the appearance of the tags, h1, h3 and p: */
+h1, h3, p{
+    color:rgb(17, 17, 17);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+    
+.portfolio{
+    margin: auto; 
+    max-width: 700px;
+    background-color: rgb(255, 241, 224);
+    border: solid;
+    border-radius: 5px
+}
+
+
+/* Set the apperance of the class, chart */
+.chart{
+    background-color: white;
+    width:485px;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(48, 38, 38);
+    position: relative;
+    left: 105px;
+}
+
+.chart1{
+    background-color: white;
+    width:485px;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(48, 38, 38);
+    position: relative;
+    left: 92px;
+}
