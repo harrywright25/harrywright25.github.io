@@ -32,7 +32,7 @@ h1, h3, p{
     border-style: solid;
     border-radius: 5px;
     border-color: rgb(48, 38, 38);
-    
+   
 }
 
 .chart1{
@@ -42,5 +42,15 @@ h1, h3, p{
     border-style: solid;
     border-radius: 5px;
     border-color: rgb(48, 38, 38);
-    
+ 
+}
+.chart2{
+    background-color: white;
+    width:575px;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(48, 38, 38);
+ 
+
 }
