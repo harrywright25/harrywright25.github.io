@@ -43,6 +43,11 @@
         <div class="chart1" id="IMF_lending"></div>
         
         <p>Once the data has been realised by adjusting the lending to a proportion of world GDP, it can be seen that the riskiest year was 1984, due to the highest proportion of credit outstanding.</p>
+       
+        <h3>Week 3</h3>
+        <p>This chart looks at affordability of a healthy diet across different demographics</p>
+        <div class="chart2" id="Food_affordability"></div>
+    
         </div>
     </div> 
 </body>
@@ -52,8 +57,33 @@
         //Define charts:
         var myChart1 = "EnvChart1.json"
         var myChart2 = "Envchart2.json"
-        var myChart3= "IMF_lendingoutstanding.json"
+        var myChart3 = "IMF_lendingoutstanding.json"
         var myChart4 = "IMF_lending.json";
+        var myChart5 = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Food prices",
+    "title":
+    {"text":"Share of population that cannot afford a healthy diet, 2020",
+    "subtitle":"A diet is deemed unaffordable if it costs more than 52% of a household's income. Source: World Bank",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+  
+    },
+    "data": {
+      "values": [
+        {"Entity": "High income", "healthy_unaffordable_share": 1.4}, {"Entity": "Low income", "healthy_unaffordable_share": 88.3}, {"Entity": "Lower-middle income", "healthy_unaffordable_share": 69.4}, {"Entity": "Upper-middle income", "healthy_unaffordable_share": 15.2}, {"Entity": "World", "healthy_unaffordable_share": 42.0}]
+    },
+    "mark":{
+      "type": "bar",
+      "color": "#86d0bb"},
+    "width": 500,
+    "height": 300,
+    "encoding": {
+      "x": {"field": "Entity", "type": "nominal", "axis": {"grid": false, "labelAngle": 0}
+      },
+      "y": {"field": "healthy_unaffordable_share", "type": "quantitative", "title": "Share of population (%)", "axis": {"grid": false}
+    }
+    }}
         
         
         // Embed charts:
@@ -62,8 +92,10 @@
         vegaEmbed('#Carbon_per_capita', myChart2)
         vegaEmbed('#IMF_lendingoutstanding', myChart3);
         vegaEmbed('#IMF_lending', myChart4)
+        vegaEmbed('#Food_affordability', myChart5)
         
 </script>
 
 </html>
+    
     
