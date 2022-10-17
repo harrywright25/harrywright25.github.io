@@ -52,17 +52,19 @@ h1, h3, p{
 a{
     border: 3px;
     border-color: black;
-    border-radius: 3px;
+    border-radius: 5px;
     border-style: solid;
     margin:auto;
     font-family: 'Roboto', sans-serif;
     padding:4px;
+    opacity: 0.75;
 }
 
 #link1{
     font-family: 'Roboto', sans-serif;
     padding:4px;
-    
+    opacity: 0.75;
+    border-radius: 5px;
 
 
 }
