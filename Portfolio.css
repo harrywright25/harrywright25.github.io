@@ -4,7 +4,10 @@
 /* Set the background color for my page: */
 body{
     background-color: rgb(255, 255, 255);
-        background-image: url(https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/GTYSdDW/videoblocks-technology-network-background_bp3k3q70x_thumbnail-1080_01.png);
+    background-image: url(https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/GTYSdDW/videoblocks-technology-network-background_bp3k3q70x_thumbnail-1080_01.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 
  
 }
@@ -20,11 +23,46 @@ h1, h3, p{
 .portfolio{
     margin: auto; 
     max-width: 700px;
-    background-color: rgba(255, 241, 224,0.9);
+    background-color:rgba(255, 241, 224,0.9);
     border: solid;
-    border-radius: 5px
+    border-radius: 5px;
+    border-color:rgba(48, 38, 38,0.75);
+    margin-bottom:20px;
+
+    
+    
+}
+.week1{
+    margin: auto; 
+    max-width: 700px;
+    background-color:rgba(255, 241, 224,0.9);
+    border: solid;
+    border-radius: 5px;
+    border-color:rgba(48, 38, 38,0.75);
+    margin-bottom:20px;
+    
 }
 
+
+.week2{
+    margin: auto; 
+    max-width: 700px;
+    background-color:rgba(255, 241, 224,0.9);
+    border: solid;
+    border-radius: 5px;
+    border-color:rgba(48, 38, 38,0.75);
+    margin-bottom:20px;
+}
+
+.week3{
+    margin: auto; 
+    max-width: 700px;
+    background-color:rgba(255, 241, 224,0.9);
+    border: solid;
+    border-radius: 5px;
+    border-color:rgba(48, 38, 38,0.75);
+    margin-bottom:20px;
+}
 
 /* Set the apperance of the class, chart */
 .chart{
@@ -33,7 +71,10 @@ h1, h3, p{
     border-width: 5px;
     border-style: solid;
     border-radius: 5px;
-    border-color: rgb(48, 38, 38);
+    border-color:rgba(48, 38, 38,0.75);
+    margin-bottom:20px;
+   
+   
    
 }
 
@@ -43,7 +84,8 @@ h1, h3, p{
     border-width: 5px;
     border-style: solid;
     border-radius: 5px;
-    border-color: rgb(48, 38, 38);
+    border-color:rgba(48, 38, 38,0.75);
+    margin-bottom:20px;
  
 }
 .chart2{
@@ -52,7 +94,8 @@ h1, h3, p{
     border-width: 5px;
     border-style: solid;
     border-radius: 5px;
-    border-color: rgb(48, 38, 38);
+    border-color:rgba(48, 38, 38,0.75);
+    margin-bottom:20px;
  
 
 }
