@@ -64,6 +64,16 @@ h1, h3, p{
     margin-bottom:20px;
 }
 
+.week4{
+    margin: auto;
+    max-width: 700px;
+    background-color:rgba(255, 241, 224,0.9);
+    border: solid;
+    border-radius: 5px;
+    border-color:rgba(48, 38, 38,0.75);
+    margin-bottom:20px;
+}
+
 /* Set the apperance of the class, chart */
 .chart{
     background-color: white;
