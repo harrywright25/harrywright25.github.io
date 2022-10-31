@@ -20,7 +20,7 @@ h1, h3, p{
     text-align: center;
 }
     
-portfolio{
+.portfolio{
     margin: auto; 
     max-width: 850px;
     background-color:rgba(255, 241, 224,0.9);
