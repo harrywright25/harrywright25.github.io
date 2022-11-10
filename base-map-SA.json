@@ -1,0 +1,25 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 500,
+    "height": 500,
+  
+    "data":{
+      "url": "https://raw.githubusercontent.com/harrywright25/harrywright25.github.io/main/map-south-america.json",
+      "format":{ 
+      "property": "features"}},
+      
+      "projection": {"type": "mercator"},
+      
+      "mark":{"type": "geoshape",
+      "stroke": "darkgrey",
+      "fill": "lightgray",
+      "strokeWidth": 0.5
+      
+      
+      },
+  
+  "encoding": {
+    "tooltip":{"field":"properties.name", "type": "nominal"}
+  }
+  }
+  
