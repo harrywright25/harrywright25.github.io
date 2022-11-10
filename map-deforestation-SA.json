@@ -44,7 +44,7 @@
   
   "encoding": {
     "tooltip":[{"field":"properties.name", "type": "nominal", "title":"Country"},
-    {"field":"Deforestation 2010-2015 (1000 ha/year)", "title":"Deforestation (1000 ha)"}],
+    {"field":"Deforestation 2010-2015 (1000 ha/year)", "title":"Deforestation (1000 ha/yr)"}],
 
 
     "color":{"field":"Deforestation 2010-2015 (1000 ha/year)", "type": "quantitative", "title":"Deforestation (1000 ha per year)"}
