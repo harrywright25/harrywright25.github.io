@@ -3,11 +3,11 @@
 
 /* Set the background color for my page: */
 body{
-    background-color: rgb(255, 255, 255);
-    background-image: url(https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/GTYSdDW/videoblocks-technology-network-background_bp3k3q70x_thumbnail-1080_01.png);
+
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-color:rgba(255, 241, 224,0.9);
  
 }
 
@@ -18,23 +18,35 @@ h1, h3, p{
     font-family: 'Roboto', sans-serif;
     text-align: center;
 }
-    
-.portfolio{
+
+
+.menu{
+    position: fixed;
     margin: auto; 
-    max-width: 850px;
-    background-color:rgba(255, 241, 224,0.9);
+    max-width: 300px;
+    background-color: rgb(255, 255, 255);
     border: solid;
     border-radius: 5px;
     border-color:rgba(48, 38, 38,0.75);
     margin-bottom:20px;
 
+}
+    
+.portfolio{
+    margin: auto; 
+    max-width: 1200px;
+    background-color: rgb(255, 255, 255);
+    border: solid;
+    border-radius: 5px;
+    border-color:rgba(48, 38, 38,0.75);
+    margin-bottom:20px;
     
     
 }
 .week1{
     margin: auto; 
-    max-width: 850px;
-    background-color:rgba(255, 241, 224,0.9);
+    max-width: 1200px;
+    background-color: rgb(255, 255, 255);    
     border: solid;
     border-radius: 5px;
     border-color:rgba(48, 38, 38,0.75);
@@ -45,8 +57,8 @@ h1, h3, p{
 
 .week2{
     margin: auto; 
-    max-width: 850px;
-    background-color:rgba(255, 241, 224,0.9);
+    max-width: 1200px;
+    background-color: rgb(255, 255, 255);    
     border: solid;
     border-radius: 5px;
     border-color:rgba(48, 38, 38,0.75);
@@ -55,8 +67,8 @@ h1, h3, p{
 
 .week3{
     margin: auto; 
-    max-width: 850px;
-    background-color:rgba(255, 241, 224,0.9);
+    max-width: 1200px;
+    background-color: rgb(255, 255, 255);
     border: solid;
     border-radius: 5px;
     border-color:rgba(48, 38, 38,0.75);
@@ -65,8 +77,8 @@ h1, h3, p{
 
 .week4{
     margin: auto;
-    max-width: 850px;
-    background-color:rgba(255, 241, 224,0.9);
+    max-width: 1200px;
+    background-color: rgb(255, 255, 255);
     border: solid;
     border-radius: 5px;
     border-color:rgba(48, 38, 38,0.75);
@@ -76,8 +88,8 @@ h1, h3, p{
 
 .week5{
     margin: auto;
-    max-width: 850px;
-    background-color:rgba(255, 241, 224,0.9);
+    max-width: 1200px;
+    background-color: rgb(255, 255, 255);    
     border: solid;
     border-radius: 5px;
     border-color:rgba(48, 38, 38,0.75);
@@ -86,8 +98,8 @@ h1, h3, p{
 
 .week7{
     margin: auto;
-    max-width: 850px;
-    background-color:rgba(255, 241, 224,0.9);
+    max-width: 1200px;
+    background-color: rgb(255, 255, 255);    
     border: solid;
     border-radius: 5px;
     border-color:rgba(48, 38, 38,0.75);
@@ -96,13 +108,25 @@ h1, h3, p{
 
 .week8{
     margin: auto;
-    max-width: 850px;
-    background-color:rgba(255, 241, 224,0.9);
+    max-width: 1200px;
+    background-color: rgb(255, 255, 255);    
     border: solid;
     border-radius: 5px;
     border-color:rgba(48, 38, 38,0.75);
     margin-bottom:20px;
 }
+
+.week9{
+    margin: auto;
+    max-width: 1200px;
+    background-color: rgb(255, 255, 255);    
+    border: solid;
+    border-radius: 5px;
+    border-color:rgba(48, 38, 38,0.75);
+    margin-bottom:20px;
+}
+
+
 /* Set the apperance of the class, chart */
 .chart{
     background-color: white;
@@ -169,3 +193,24 @@ h1, h3, p{
     border-color:rgba(48, 38, 38,0.75);
     margin-bottom:20px;
 }
+
+.chart-w9{
+    background-color: white;
+    width: 550px;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color:rgba(48, 38, 38,0.75);
+    margin-bottom:20px;
+}
+
+.chart2-w9{
+    background-color: white;
+    width: 400px;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color:rgba(48, 38, 38,0.75);
+    margin-bottom:20px;
+}
+
