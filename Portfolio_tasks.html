@@ -24,6 +24,11 @@
 
 <body>
     <!-- First create a div for week 2 -->
+    <div class="menu">
+      <a href="Portfolio_tasks.html" id="link1">Portfolio</a>
+      <a href="project.html" id="link2">Project</a>
+      <a href="https://github.com/harrywright25" id="link3">Github</a>
+    </div>
     <div style="text-align:center">
     <div class ="portfolio">
       <h1>Portfolio</h1>
@@ -101,6 +106,15 @@
 
     </div>
     
+    <div class = "week9">
+      <h3>Week 9</h3>
+      <p>Two advanced charts, focused around ideas for my project.</p>
+      <div class="chart-w9" id="chart1-w9"></div>
+      <div class="chart2-w9" id="chart2-w9"></div>
+      <div class="chart2-w9" id="chart3-w9"></div>
+    </div>
+
+
 </body>
     
     
@@ -127,7 +141,9 @@
         var myChart19 = 'chart-oilrents.json'
         var myChart20 = 'chart-naturalgas.json'
         var myChart21 = 'chart-week8-ratio.json'
-        
+        var myChart22 = 'chart-renewable-share.json'
+        var myChart23 = 'chart-envtax.json'
+        var myChart24 = 'chart-oilcons.json'
         
         // Embed charts:
         
@@ -152,6 +168,10 @@
         vegaEmbed('#chart1-w8', myChart19)
         vegaEmbed('#chart2-w8', myChart20)
         vegaEmbed('#chart3-w8', myChart21)
+        vegaEmbed('#chart1-w9', myChart22)
+        vegaEmbed('#chart2-w9', myChart23)
+        vegaEmbed('#chart3-w9', myChart24)
+
 </script>
 
 </html>
