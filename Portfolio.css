@@ -173,6 +173,16 @@ h1, h3, p{
     margin-bottom:20px;
     
 }
+.chart5{
+    background-color: white;
+    width: 300px;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color:rgba(48, 38, 38,0.75);
+    margin-bottom:20px;
+    
+}
 
 .chart-w7{
     background-color: white;
