@@ -20,17 +20,6 @@ h1, h3, p{
 }
 
 
-.menu{
-    position: fixed;
-    margin: auto; 
-    max-width: 300px;
-    background-color: rgb(255, 255, 255);
-    border: solid;
-    border-radius: 5px;
-    border-color:rgba(48, 38, 38,0.75);
-    margin-bottom:20px;
-
-}
     
 .portfolio{
     margin: auto; 
@@ -39,7 +28,7 @@ h1, h3, p{
     border: solid;
     border-radius: 5px;
     border-color:rgba(48, 38, 38,0.75);
-    margin-bottom:20px;
+    
     
     
 }
@@ -51,6 +40,7 @@ h1, h3, p{
     border-radius: 5px;
     border-color:rgba(48, 38, 38,0.75);
     margin-bottom:20px;
+    margin-top: 50px;
     
 }
 
