@@ -1,0 +1,17 @@
+,x,y,ppscore,case,is_valid_score,metric,baseline_score,model_score,model
+0,Solar photovoltaic levelized cost of energy,Solar photovoltaic levelized cost of energy,1.0,predict_itself,True,,0.0,1.0,
+1,Solar photovoltaic levelized cost of energy,log_solar,0.6273056078148743,regression,True,mean absolute error,0.7847937155653929,0.2924882168133505,DecisionTreeRegressor()
+2,Solar photovoltaic levelized cost of energy,log_solar-cost,0.6166271291752797,regression,True,mean absolute error,0.10009380815535524,0.03837325058429734,DecisionTreeRegressor()
+3,Solar photovoltaic levelized cost of energy,Solar photovoltaic,0.5978368764716724,regression,True,mean absolute error,213483.49687500004,85855.18992499998,DecisionTreeRegressor()
+4,log_solar,Solar photovoltaic levelized cost of energy,0.6277246715109566,regression,True,mean absolute error,0.08298100841666668,0.030891782166666666,DecisionTreeRegressor()
+5,log_solar,log_solar,1.0,predict_itself,True,,0.0,1.0,
+6,log_solar,log_solar-cost,0.6092806248695651,regression,True,mean absolute error,0.10009380815535524,0.039108590176886025,DecisionTreeRegressor()
+7,log_solar,Solar photovoltaic,0.5843399092563544,regression,True,mean absolute error,213483.49687500004,88736.56968333332,DecisionTreeRegressor()
+8,log_solar-cost,Solar photovoltaic levelized cost of energy,0.6361246196432653,regression,True,mean absolute error,0.08298100841666668,0.030194745999999998,DecisionTreeRegressor()
+9,log_solar-cost,log_solar,0.6273056078148743,regression,True,mean absolute error,0.7847937155653929,0.2924882168133505,DecisionTreeRegressor()
+10,log_solar-cost,log_solar-cost,1.0,predict_itself,True,,0.0,1.0,
+11,log_solar-cost,Solar photovoltaic,0.5978368764716724,regression,True,mean absolute error,213483.49687500004,85855.18992499998,DecisionTreeRegressor()
+12,Solar photovoltaic,Solar photovoltaic levelized cost of energy,0.5557560785688251,regression,True,mean absolute error,0.08298100841666668,0.03686380858333333,DecisionTreeRegressor()
+13,Solar photovoltaic,log_solar,0.6058403316794453,regression,True,mean absolute error,0.7847937155653929,0.309334030627311,DecisionTreeRegressor()
+14,Solar photovoltaic,log_solar-cost,0.530445459209988,regression,True,mean absolute error,0.10009380815535524,0.046999502124311386,DecisionTreeRegressor()
+15,Solar photovoltaic,Solar photovoltaic,1.0,predict_itself,True,,0.0,1.0,
