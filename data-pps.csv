@@ -1,0 +1,5 @@
+,x,y,ppscore,case,is_valid_score,metric,baseline_score,model_score,model
+0,Solar photovoltaic levelized cost of energy,Solar photovoltaic levelized cost of energy,1.0,predict_itself,True,,0.0,1.0,
+1,Solar photovoltaic levelized cost of energy,log_solar,0.6273056078148743,regression,True,mean absolute error,0.7847937155653929,0.2924882168133505,DecisionTreeRegressor()
+2,log_solar,Solar photovoltaic levelized cost of energy,0.6277246715109566,regression,True,mean absolute error,0.08298100841666668,0.030891782166666666,DecisionTreeRegressor()
+3,log_solar,log_solar,1.0,predict_itself,True,,0.0,1.0,
