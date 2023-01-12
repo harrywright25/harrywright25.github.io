@@ -38,16 +38,33 @@
     <h3>Is there an economic incentive to switch to renewable energy sources?</h3>
     <p>Aim: To analyse the costs and benefits of renewable energy, specifically when compared to traditional fossil fuel energy sources. With an increasing pressure on global institutions to reduce their Co2 emissions due to an ever-growing climate crisis, investigating the effectiveness of more sustainable energy supplies is of great importance.</p>
     <div class="header">
-    <h3>Chart 1:</h3>
+    <h3>Chart 1&2:</h3>
     </div>
     <div class = "chart" id="chart1">
-        <script>
-            var myChart1 = "chart-capacity.json"
-            vegaEmbed('#chart1', myChart1)
-        </script>
+
+    </div>
+    <div class="chart7" id="chart7">
+        
+
     </div>
    </div>
 </body>
 
+<script>
+    let width = screen.width
+        if (width > 600){
+            myChart1 = "chart-capacity.json";
+            myChart2 = "chart-cost.json"
+        }
+        else{
+            mychart1 = "chart-capacity-mobile.json"
+            mychart1 = "chart-cost-mobile.json"
+        }
+        
+    vegaEmbed("#chart1",myChart1)
+    vegaEmbed("#chart7",myChart2)
+
+
+</script>
 
 </html>
