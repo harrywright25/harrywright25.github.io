@@ -107,7 +107,7 @@ p{
 .chart{
    
     background-color:#F5F5F5;
-    width: clamp(100px,auto,500px);
+    width: 50%;
     height: auto;
     border-radius: 15px;
     margin-bottom:50px;
