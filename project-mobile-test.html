@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title for the page -->
+    <title>Harry Wright's Data Science Project</title>
+
+    <!-- Link to my style sheet -->
+    <link rel="stylesheet" href="project-mobile-test.css">
+
+    <!--The next three lines allow the Vega embed-->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+
+
+<body>
+    <div style="text-align:center">
+   <div class="project">
+    <h1>Data Science Project</h1>
+    <div class="menu">
+        <a href="index.html" id="link1">Home</a>
+        <a href="Portfolio_tasks.html" id="link2">Portfolio</a>
+        <a href="https://github.com/harrywright25" id="link3">Github</a>
+      </div>
+   </div>
+
+   <div class="para1">
+    <h3>Is there an economic incentive to switch to renewable energy sources?</h3>
+    <p>Aim: To analyse the costs and benefits of renewable energy, specifically when compared to traditional fossil fuel energy sources. With an increasing pressure on global institutions to reduce their Co2 emissions due to an ever-growing climate crisis, investigating the effectiveness of more sustainable energy supplies is of great importance.</p>
+    <div class="header">
+    <h3>Chart 1:</h3>
+    </div>
+    <div class = "chart" id="chart1">
+        <script>
+            var myChart1 = "chart-capacity.json"
+            vegaEmbed('#chart1', myChart1)
+        </script>
+    </div>
+   </div>
+</body>
+
+
+</html>

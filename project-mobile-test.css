@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+
+/* Set the background color for my page: */
+body{
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color:	#2e5266ff;
+ 
+}
+
+h1{
+    color:#2e5266ff;
+    font-family: 'Styrenea web', sans-serif;
+    text-align: center;
+    font-size: 35px;
+    text-shadow: 4px 3px rgba(250, 241, 207);
+    font-weight: 600;
+    line-height: 44px
+
+}
+/* Choose the appearance of the tags, h1, h3 and p: */
+h3{
+    color:#2e5266ff;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px rgba(250, 241, 207);
+
+}
+
+p{
+    color:#2e5266ff;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+
+.project{
+    margin: auto; 
+    max-width: 1200px;
+    background-color:rgb(255, 255,255,0.8) ;
+    border: solid;
+    border-radius: 20px;
+    border-color:#FAF1CF;
+    margin-bottom: 20px;
+    box-shadow: 4px 3px rgba(54, 51, 51,0.8) 
+    
+    
+}
+
+#link1{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #2e5266ff;       
+    display: inline-block;
+    text-decoration: none;
+    color:#FAF1CF ;
+    box-shadow: 4px 3px rgba(51, 54, 54, 0.8)
+    
+    
+}
+#link2{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #2e5266ff;       
+    display: inline-block;
+    text-decoration: none;
+    color: #FAF1CF;
+    box-shadow: 4px 3px rgba(54, 51, 51,0.8)
+    
+}
+#link3{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #2e5266ff;       
+    display: inline-block;
+    text-decoration: none;
+    color:#FAF1CF;
+    box-shadow: 4px 3px rgba(54, 51, 51,0.8)
+    
+}
+   
+   
+    
+
+
+.para1{
+    margin: auto; 
+    max-width: 1200px;
+    background-color: rgb(255, 255,255,0.8) ;    
+    border: solid;
+    border-radius: 20px;
+    border-color:#FAF1CF;
+    margin-bottom:20px;
+    margin-top: 20px;
+    float: center;
+    box-shadow: 4px 3px rgba(54, 51, 51,0.8) ;
+    
+}
+
+
+
+
+.chart6{
+   
+    background-color:#F5F5F5;
+    width:auto;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom:50px;
+    float: center;
+    
+}
+
+
+
+.header{
+        color: #000;
+        top: 30px;
+        width: 100%;
+        min-height: 30px;
+        display: inline-block;
+        text-align: center;
+        margin: 0 auto;
+        }
+
+
+
+
