@@ -20,18 +20,19 @@
         "fields": ["Energy Source"],
         "bind": {
           "input": "select",
+          
           "options": [
             null,
-            "Biofuels (TWh, substituted energy)",
-            "Coal (TWh, substituted energy)",
-            "Gas (TWh, substituted energy)",
-            "Hydropower (TWh, substituted energy)",
-            "Solar (TWh, substituted energy)",
-            "Wind (TWh, substituted energy)",
-            "Oil (TWh, substituted energy)",
-            "Nuclear (TWh, substituted energy)",
-            "Other renewables (TWh, substituted energy)",
-            "Traditional biomass (TWh, substituted energy)"
+            "Biofuels ()",
+            "Coal ()",
+            "Gas ()",
+            "Hydropower ()",
+            "Solar ()",
+            "Wind ()",
+            "Oil ()",
+            "Nuclear ()",
+            "Other renewables ()",
+            "Traditional biomass ()"
           ],
           "name": "Source"
           
