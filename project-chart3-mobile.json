@@ -8,7 +8,7 @@
         "Source URL: https://energyeducation.ca/encyclopedia/Levelized_cost_of_energy"
       ],
       "subtitleFontStyle": "italic",
-      "subtitleFontSize": 10,
+      "subtitleFontSize":7,
       "anchor": "start",
       "color": "black"
     },
@@ -27,8 +27,8 @@
     ],
     "columns": 1,
     "spec": {
-      "height": 125,
-      "width": 125,
+      "height": 100,
+      "width": 100,
       "mark": "bar",
       "encoding": {
         "x": {
@@ -40,12 +40,12 @@
         "y": {
           "field": {"repeat": "repeat"},
           "type": "quantitative",
-          "axis": {"grid": false, "titleFontSize": 8, "titleFontWeight": "normal"}
+          "axis": {"grid": false, "titleFontSize": 7, "titleFontWeight": "normal"}
         },
         "color": {
           "field": "Type of  System",
           "scale": {"scheme": "darkmulti"},
-          "legend": {"title": null, "labelFontSize": 7}
+          "legend": {"title": null, "labelFontSize": 6}
         },
         "tooltip": [
           {"field": "Type of  System", "title": "System"},
