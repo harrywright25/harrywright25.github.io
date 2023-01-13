@@ -3,6 +3,15 @@
     "data": {"url": "https://raw.githubusercontent.com/harrywright25/harrywright25.github.io/main/data-pps2.csv"},
     "height": 150,
     "width":150,
+    "title": {
+    "text": "PP score matrix",
+    "subtitle": [
+      "Predictive power score matrix"
+    ],
+    "subtitleFontSize": 10,
+    "subtitleFontStyle": "italic",
+    "anchor": "start"
+  },
     
     "encoding": {
       "y": {"field": "x", "type": "nominal", "title":null},
