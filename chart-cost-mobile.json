@@ -16,7 +16,7 @@
 
   "mark": {"type":"circle", "size":10},
   "encoding": { 
-    "row": {"field": "Energy Cost", },
+    "row": {"field": "Energy Cost"},
     
     "x": {
       "field": "Year",
