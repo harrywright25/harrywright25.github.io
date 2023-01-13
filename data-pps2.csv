@@ -1,0 +1,17 @@
+,x,y,ppscore,case,is_valid_score,metric,baseline_score,model_score,model
+0,Solar LCOE,Solar LCOE,1.0,predict_itself,True,,0.0,1.0,
+1,Solar LCOE,log_solar,0.6273056078148743,regression,True,mean absolute error,0.7847937155653929,0.2924882168133505,DecisionTreeRegressor()
+2,Solar LCOE,log_LCOE,0.6860237623291439,regression,True,mean absolute error,0.5759920240703051,0.18084780864601557,DecisionTreeRegressor()
+3,Solar LCOE,Solar,0.5978368764716724,regression,True,mean absolute error,213483.49687500004,85855.18992499998,DecisionTreeRegressor()
+4,log_solar,Solar LCOE,0.6277246715109566,regression,True,mean absolute error,0.08298100841666668,0.030891782166666666,DecisionTreeRegressor()
+5,log_solar,log_solar,1.0,predict_itself,True,,0.0,1.0,
+6,log_solar,log_LCOE,0.6667237618754203,regression,True,mean absolute error,0.5759920240703051,0.19196445497191372,DecisionTreeRegressor()
+7,log_solar,Solar,0.5843399092563544,regression,True,mean absolute error,213483.49687500004,88736.56968333332,DecisionTreeRegressor()
+8,log_LCOE,Solar LCOE,0.6361246196432653,regression,True,mean absolute error,0.08298100841666668,0.030194745999999998,DecisionTreeRegressor()
+9,log_LCOE,log_solar,0.6273056078148743,regression,True,mean absolute error,0.7847937155653929,0.2924882168133505,DecisionTreeRegressor()
+10,log_LCOE,log_LCOE,1.0,predict_itself,True,,0.0,1.0,
+11,log_LCOE,Solar,0.5978368764716724,regression,True,mean absolute error,213483.49687500004,85855.18992499998,DecisionTreeRegressor()
+12,Solar,Solar LCOE,0.5557560785688251,regression,True,mean absolute error,0.08298100841666668,0.03686380858333333,DecisionTreeRegressor()
+13,Solar,log_solar,0.6058403316794453,regression,True,mean absolute error,0.7847937155653929,0.309334030627311,DecisionTreeRegressor()
+14,Solar,log_LCOE,0.6372058460803554,regression,True,mean absolute error,0.5759920240703051,0.20896653903704998,DecisionTreeRegressor()
+15,Solar,Solar,1.0,predict_itself,True,,0.0,1.0,
