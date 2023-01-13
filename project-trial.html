@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title for the page -->
+    <title>Harry Wright's Data Science Project</title>
+
+    <!-- Link to my style sheet -->
+    <link rel="stylesheet" href="project-trial.css">
+
+    <!--The next three lines allow the Vega embed-->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+
+
+<body>
+    <div style="text-align:center">
+   <div class="project">
+    <h1>Data<span style="color:#264353" id = "style">Science</span></h1>
+    <div class="menu">
+        <a href="index.html" id="link1">Home</a>
+        <a href="Portfolio_tasks.html" id="link2">Portfolio</a>
+        <a href="https://github.com/harrywright25" id="link3">Github</a>
+      </div>
+   </div>
+
+   <div class="main-body">
+    <h2>Project</h2>
+    <h3>Is there an economic incentive to switch to renewable energy sources?</h3>
+    <p>Aim: To analyse the costs and benefits of renewable energy, specifically when compared to traditional fossil fuel energy sources. With an increasing pressure on global institutions to reduce their CO2 emissions due to an ever-growing climate crisis, investigating the effectiveness of more sustainable energy supplies is of great importance.</p>
+    <div class="header">
+    <h3>Chart 1:</h3>
+    </div>
+    <div class = "chart" id="chart1">
+      
+    </div>
+    <p>The chart shows global energy consumption by source. 
+        It can clearly be seen that fossil fuels dominate overall energy consumption, 
+        with renewables only experiencing increases in recent years. 
+        I coded a 'selection' panel in Vega-lite to allow for individual source obersavtion. 
+        This shows that renewable energy consumption has increased drastically post-2000 when compared to fossil fuels.
+    This may be due to many reasons. To investigate this further I will look at the different costs associated with each source. 
+Data cleaning can be found <a href="https://colab.research.google.com/drive/1DRvx3trm38UV1odqJJ1rfjU6SdtxX8yH#scrollTo=EPSpcwIXGlZm" id="link_colab1">here</a>.</p>
+    
+    <div class="header">
+    <h3>Chart 2:</h3>
+    </div>
+    <div class="flex-box2">
+    <div class = "chart" id = "chart3">
+       
+    </div>
+</div>
+    <p>The bar charts show the LCOE of energy by source. It shows that the costs associated with fossil fuels and renewables are intrinsically
+    different; renewables have high initial capital costs but low running costs (fuel cost) and crutially do not emit CO2. Only solar's full cost is dramatically more than fossil fuels. I scraped the data from <a href="https://energyeducation.ca/encyclopedia/Levelized_cost_of_energy"
+    id="scrape_link1">Energy Education</a>. Find data scraping and cleaning <a href="https://colab.research.google.com/drive/1j_fTDxujbYf5PcZ3PpQyTBFAriZE8ebK#scrollTo=oSqUaZHWVTSQ" id="link_colab2">here</a>.</p>
+    <div class="header">
+    <h3>Chart 3:</h3>
+    </div>
+    <div class = "chart" id = "chart4">
+        
+    </div>
+    <p>Many schemes have introduced a carbon price which is aimed at reducing CO2 emissions, which could be a factor contributing to renewables becoming cheaper. This chart shows European carbon emission futures prices with a 30-day rolling mean. It can clearly be seen that prices have increased dramatically in recent years. 
+        This means an increased cost burden of polluting through the use of fossil fuels and incentivizes swapping to cleaner energy. Finding data on carbon emissions prices was difficult</p>
+
+
+    <div class="header">
+    <h3>Chart 4:</h3>
+    </div>
+
+    <div class = "chart" id = "chart5">
+       
+    </div>
+    <p>This is a regression of global natural gas prices (U.S. Dollars per Million Metric British Thermal Unit) on the carbon futures prices. I suspected that an incresing carbon price would likely cause the price of fossil fuels to increase.
+         I had to combine two datasets to visualise the chart and then used the regress function in Vega-lite. A challenge of this was merging the datasets. When I fist attempted this with a 'pd.concat()' function, the format was very difficult to change. Instead, by making the date column of both datasets have the same format, I could use a merge function to join them, which gave me the correct format I wanted and removed any irrelevant data points.
+         A positive relationship is found between the variables. Following events such as COP26, many countries are implementing carbon pricing schemes and with the climate crisis becoming more urgent, the price of carbon will likely keep increasing, causing fossil fuels to keep getting more expensive. The data cleaning can be seen <a href="https://colab.research.google.com/drive/1NpMeXcarppzX_7r8gvzJFKhxqG0d_YMO" id="link_colab3">here</a>.</p>
+    
+    <div class="header">   
+    <h3>Chart 5 & 6:</h3>  
+    </div>
+    <p>Charts 5 and 6 show the LCOE and installed energy capacity by source respectively. It appears that as capacity is increase, the LCOE of renewables is decreasing. This follows economies of scale, and implies that costs will likely keep falling as more renewable energy is installed.</p>
+   <div class="flex-box">
+    <div class = "chart" id = "chart6">
+        
+    </div>
+
+    <div class = "chart" id = "chart7">
+        
+    </div>
+   </div>
+    
+   
+    <div class="header">
+    <h3>Chart 7:</h3>
+    </div>
+    <p>I wanted to perform a regression of solar PV costs on capacity. Firstly, I created a predictive power score matrix in pandas, including logarithmic scales for both measures. The PP score picks up linear and non-linear relationships, so this was used to check if using a logarithmic scale would give a higher correlation.  </p>
+    <div class = "chart" id = "chart8">
+        
+    </div>
+    <p>This lead me to regress Solar PV LCOE on log_solar as they had the highest predictive power score. I created the PP score matrix <a href="https://colab.research.google.com/drive/1UZ4CfkaurrLllk-uvIcduati67FNtEFT" id="link_ppscore">here</a> from a dataset that I <a href="https://colab.research.google.com/drive/1llNOzCI-ea6Q9IPFQO_7M7RlRr66rmbe" id="link_data">cleaned</a> before.</p>
+    <div class="header">
+    <h3>Chart 8:</h3>
+    </div>
+    <p>Firstly, I regressed solar capacity on cost, giving an R<sup>2</sup> of 0.63. I then regressed the log of capacity on cost, shown below, which gave an R<sup>2</sup> of 0.92. This shows that the relationship was non-linear, as the log regression fits the datas much better. This was picked up by the PP score. The regression shows that as capacity increases, the cost of the energy decreases.</p>
+    <div class = "chart" id = "chart9">
+       
+    </div>
+    <p>I collected the data from <a href="https://pxweb.irena.org/pxweb/en/IRENASTAT/IRENASTAT__Power%20Capacity%20and%20Generation/RECAP_2022_cycle2.px/">IRENA</a> and <a href="https://ourworldindata.org/grapher/levelized-cost-of-energy">Our World in Data</a> and then merged the two datasets. </p>
+
+
+
+
+   </div>
+
+
+
+
+
+
+
+   </div>
+</body>
+<script>
+
+
+
+let width = screen.width
+        if (width > 1000){
+            var myChart1 = "project_chart1.json";
+            var myChart3 = "project-chart3.json";
+            var myChart4 = "project-chart4.json";
+            var myChart5 = "project-chart5.json";
+            var myChart6 = "chart-capacity.json";
+            var myChart7 = "chart-cost.json";
+            var myChart8 = "PPScore.json";
+            var myChart9 = "chart-solar-reg.json"
+
+        } else{
+            myChart1 = "project-chart1-mobile.json";
+            myChart3 = "project-chart3-mobile.json";
+            myChart4 = "project-chart4-mobile.json";
+            myChart5 = "project-chart5-mobile.json";
+            myChart6 = "chart-capacity-mobile.json"
+            myChart7 = "chart-cost-mobile.json"
+            myChart8 = "ppscore-mobile.json";
+            myChart9 = "chart-solar-reg-mobile.json"
+        }
+        
+  
+        vegaEmbed('#chart1', myChart1)
+        vegaEmbed('#chart3', myChart3)
+        vegaEmbed('#chart4', myChart4)
+        vegaEmbed('#chart5', myChart5)
+        vegaEmbed('#chart6', myChart6)
+        vegaEmbed('#chart7', myChart7)
+        vegaEmbed('#chart8', myChart8)
+        vegaEmbed('#chart9', myChart9)
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+</html>
