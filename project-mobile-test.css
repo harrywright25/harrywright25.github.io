@@ -7,7 +7,7 @@ body{
 
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 100%;
     background-color:	#1b313d;
  
 }
@@ -40,7 +40,7 @@ p{
 
 .project{
     margin: auto; 
-    max-width: 1200px;
+    width: 90%;
     background-color:#467c9b ;
     border: solid;
     border-radius: 20px;
@@ -89,7 +89,7 @@ p{
 
 .para1{
     margin: auto; 
-    max-width: 1200px;
+    width: 90%;
     background-color: #467c9b ;    
     border: solid;
     border-radius: 20px;
@@ -105,8 +105,8 @@ p{
 
 
 .chart{
-    background-color:#F5F5F5;
-    width:auto;
+    background-color:floralwhite;
+    width:fit-content;
     height: auto;
     border-radius: 15px;
     margin-bottom:50px;
@@ -114,8 +114,8 @@ p{
 }
 .chart7{
     
-    background-color:#F5F5F5;
-    width:auto;
+    background-color:floralwhite;
+    width:fit-content;
     height: auto;
     border-radius: 15px;
     margin-bottom: 50px;
@@ -136,14 +136,7 @@ p{
         }
         
         
-@media (max-width: 700px) {
 
-
-
-
-
-
-}
 
 
 
