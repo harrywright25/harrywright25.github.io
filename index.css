@@ -1,0 +1,107 @@
+
+
+/* This is my index css file, which my main website will use*/
+
+
+/* Import a font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+/* Set the background color for my page: */
+body{
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-color:	#1b313d;
+ 
+}
+
+
+/* Choose the appearance of the tags, h1, h3 and p: */
+h1{
+    color:whitesmoke;
+    font-family: 'Styrenea web', sans-serif;
+    text-align: center;
+    font-size: 70px;
+    text-shadow: 4px 3px rgba(0, 0, 0);
+    font-weight: 800;
+    line-height: 44px;
+}
+    
+h3{
+    color:whitesmoke;
+    font-family: 'Styrenea web', sans-serif;
+    text-align: center;
+    font-weight: 800;
+    font-style: bold;
+    font-size: 20px;
+    text-shadow: 2px 2px rgba(0, 0, 0)
+}
+
+p{
+    color:black;
+    font-family: 'Styrenea web', sans-serif;
+    text-align: center;
+}
+
+
+.main-body{
+    margin: auto; 
+    width: 90%;
+    background-color:#467c9b ;
+    border: solid;
+    border-radius: 20px;
+    border-color:#0d181e;
+    margin-bottom: 20px;
+    box-shadow: 4px 3px rgba(0, 0, 0);
+ 
+}
+
+
+.a{
+    color: whitesmoke;
+}
+
+#link1{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #1b313d;       
+    display: inline-block;
+    text-decoration: none;
+    color:whitesmoke ;
+    box-shadow: 4px 3px rgba(0, 0, 0);
+    
+  
+    
+    
+}
+#link2{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #1b313d;       
+    display: inline-block;
+    text-decoration: none;
+    color: whitesmoke;
+    box-shadow: 4px 3px rgba(0, 0, 0)
+    
+}
+#link3{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #1b313d;       
+    display: inline-block;
+    text-decoration: none;
+    color:whitesmoke;
+    box-shadow: 4px 3px rgba(0, 0, 0);
+    
+
+    
+}
+
+
+
+
+
+
+ 
