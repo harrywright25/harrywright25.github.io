@@ -3,7 +3,7 @@
     "title": {
       "text": "Solar energy generation",
       "subtitle": ["Electricity generation from solar, measured in terawatt-hours","(TWh) per year, Source: Our World in Data."],
-      "subtitleFontSize": 10,
+      "subtitleFontSize": 8,
       "subtitleFontStyle": "italic",
       "anchor": "start"
     },
