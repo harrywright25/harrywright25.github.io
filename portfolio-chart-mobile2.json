@@ -5,15 +5,15 @@
       "text": "CO2 Emissions",
       "subtitle": "Tonnes per capita. Source: Global Carbon Project",
       "subtitleFontStyle": "italic",
-      "subtitleFontSize": 10,
+      "subtitleFontSize": 8,
       "anchor": "start",
       "color": "black"
     },
     "data": {
       "url": "https://raw.githubusercontent.com/RDeconomist/observatory/main/Green_CarbonPerCapita.csv"
     },
-    "height": 175,
-    "width": 175,
+    "height": 150,
+    "width": 150,
     "mark": {"type":"line", "size":1.5},
     "encoding": {
       "x": {
@@ -33,7 +33,7 @@
       "color": {
         "field": "Country",
         "title": null,
-        "legend": {"labelFontSize":8},
+        "legend": {"labelFontSize":7},
         "type": "nominal",
         "sort": [],
         "scale": {"scheme": "yellowgreenblue"}
