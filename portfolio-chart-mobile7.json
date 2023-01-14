@@ -1,11 +1,11 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "A bar chart showing the US population distribution of age groups in 2000.",
-    "height": 175,
-    "width": 175,
+    "height": 150,
+    "width": 150,
     "title": {
       "text": "Best 25 ESG Companies 2021",
-      "subtitle": ["Top stocks for environmental, social and goverance values,","Source: Investor's Business Daily"],
+      "subtitle": ["Top stocks for environmental, social and goverance","values, Source: Investor's Business Daily"],
       "subtitleFontSize": 10,
       "subtitleFontStyle": "italic",
       "anchor": "start"
