@@ -2,56 +2,56 @@
 0,Alberta TIER,ETS,Alberta,2007,140.36,0.27,0.293518223,6.365888747
 2,Argentina carbon tax,Carbon tax,Argentina,2018,79.46122723,0.16,0.272050751,0.001622049
 6,BC carbon tax,Carbon tax,British Columbia,2008,46.41,0.09,2.292998721,1.562100384
-12,California CaT,ETS,California,2012,309.468,0.60,3.9923,9.47715
-13,Canada federal OBPS,ETS,Canada,2019,53.34974168,0.10,0.263746803,2.131943002
+12,California CaT,ETS,California,2012,309.468,0.6,3.9923,9.47715
+13,Canada federal OBPS,ETS,Canada,2019,53.34974168,0.1,0.263746803,2.131943002
 14,Canada federal fuel charge,Carbon tax,Canada,2019,167.6706167,0.33,4.797594309,3.421115729
 17,Chile carbon tax,Carbon tax,Chile,2017,36.93137551,0.07,0.16,0.1655
 19,Chongqing pilot ETS,ETS,Chongqing,2014,67.139766,0.13,0.040243442,0.566144556
 21,Colombia carbon tax,Carbon tax,Colombia,2017,44.67561579,0.09,0.088923677,0.125855396
 23,Denmark carbon tax,Carbon tax,Denmark,1992,17.20838193,0.03,0.467830983,0.542291292
 24,EU ETS,ETS,"EU, Norway, Iceland, Liechtenstein",2005,1626.615082,3.18,34.32611368,136.0190418
-25,Estonia carbon tax,Carbon tax,Estonia,2000,1.40975991,0.00,0.001889892,0.002775157
+25,Estonia carbon tax,Carbon tax,Estonia,2000,1.40975991,0,0.001889892,0.002775157
 26,Finland carbon tax,Carbon tax,Finland,1990,26.92882366,0.05,1.54728,1.43468775
 27,France carbon tax,Carbon tax,France,2014,157.7754771,0.31,8.39952,9.06264
 28,Fujian pilot ETS,ETS,Fujian,2016,125.128704,0.24,0.000196578,0.365163238
 30,Germany ETS,ETS,Germany,2021,349.4383534,0.68,7.939572232,9.979956
-31,Guangdong pilot ETS,ETS,Guangdong (except Shenzhen),2013,259.2336,0.51,0.0,5.817253255
+31,Guangdong pilot ETS,ETS,Guangdong (except Shenzhen),2013,259.2336,0.51,0,5.817253255
 33,Hubei pilot ETS,ETS,Hubei,2014,63.801135,0.12,0.013445933,1.95489715
 34,Iceland carbon tax,Carbon tax,Iceland,2010,2.723247608,0.01,0.048100872,0.051805729
 37,Ireland carbon tax,Carbon tax,Ireland,2010,27.04608349,0.05,0.541548,0.585756
 41,Japan carbon tax,Carbon tax,Japan,2012,952.6586723,1.86,1.800327332,2.146481178
-42,Kazakhstan ETS,ETS,Kazakhstan,2013,169.1768076,0.33,0.0,0.152180309
+42,Kazakhstan ETS,ETS,Kazakhstan,2013,169.1768076,0.33,0,0.152180309
 43,Korea ETS,ETS,"Korea, Republic of",2015,553.439848,1.08,0.243495498,11.04344594
-44,Latvia carbon tax,Carbon tax,Latvia,2004,0.376643586,0.00,0.00668646,0.018312464
-45,Liechtenstein carbon tax,Carbon tax,Liechtenstein,2008,0.14610362,0.00,0.006914836,0.002175089
+44,Latvia carbon tax,Carbon tax,Latvia,2004,0.376643586,0,0.00668646,0.018312464
+45,Liechtenstein carbon tax,Carbon tax,Liechtenstein,2008,0.14610362,0,0.006914836,0.002175089
 46,Luxembourg carbon tax,Carbon tax,Luxembourg,2021,6.801985106,0.01,0.24104412,0.294838465
 50,Massachusetts ETS,ETS,RGGI,2018,6.072,0.01,0.0443,0.004
 51,Mexico carbon tax,Carbon tax,Mexico,2014,352.6073585,0.69,0.314465409,0.314092485
-55,Netherlands carbon tax,Carbon tax,Netherlands,2021,25.96280946,0.05,0.0,1.197978551
+55,Netherlands carbon tax,Carbon tax,Netherlands,2021,25.96280946,0.05,0,1.197978551
 57,New Brunswick carbon tax,Carbon tax,New Brunswick,2020,5.499,0.01,0.098905051,0.077325767
 58,New Zealand ETS,ETS,New Zealand,2008,41.61230129,0.08,1.647912,1.8154728
 61,Newfoundland and Labrador carbon tax,Carbon tax,Newfoundland and Labrador,2019,5.0149,0.01,0.078516624,0.073116109
-63,Northwest Territories carbon tax,Carbon tax,Northwest Territories,2019,1.3351,0.00,0.025895141,0.02089019
+63,Northwest Territories carbon tax,Carbon tax,Northwest Territories,2019,1.3351,0,0.025895141,0.02089019
 64,Norway carbon tax,Carbon tax,Norway,1991,44.73403107,0.09,1.715886995,1.714514469
 65,Nova Scotia CaT,ETS,Nova Scotia,2019,14.025,0.03,0.035805627,0.315978261
 71,Poland carbon tax,Carbon tax,Poland,1990,15.93618198,0.03,0.001145838,0.001110362
 72,Portugal carbon tax,Carbon tax,Portugal,2015,25.03861083,0.05,0.33111792,0.525885138
-73,Prince Edward Island carbon tax,Carbon tax,Prince Edward Island,2019,0.9688,0.00,0.024456522,0.013773078
+73,Prince Edward Island carbon tax,Carbon tax,Prince Edward Island,2019,0.9688,0,0.024456522,0.013773078
 74,Quebec CaT,ETS,Quebec,2013,60.918,0.12,0.899696292,1.665057545
 75,RGGI,ETS,RGGI,2009,67.342,0.13,0.926,1.22232
-76,Saitama ETS,ETS,Saitama,2011,8.16,0.02,0.0,0.127804419
-78,Saskatchewan OBPS,ETS,Saskatchewan,2019,10.231,0.02,0.0,0.408847506
+76,Saitama ETS,ETS,Saitama,2011,8.16,0.02,0,0.127804419
+78,Saskatchewan OBPS,ETS,Saskatchewan,2019,10.231,0.02,0,0.408847506
 81,Shanghai pilot ETS,ETS,Shanghai,2013,78.482705,0.15,0.003395295,1.4657514
-83,Shenzhen pilot ETS,ETS,Shenzhen,2013,13.1718,0.03,0.0,0.020179279
+83,Shenzhen pilot ETS,ETS,Shenzhen,2013,13.1718,0.03,0,0.020179279
 84,Singapore carbon tax,Carbon tax,Singapore,2019,56.41688507,0.11,0.152977296,0.141006929
 85,Slovenia carbon tax,Carbon tax,Slovenia,1996,10.64899126,0.02,0.145187339,0.081728039
-86,South Africa carbon tax,Carbon tax,South Africa,2019,459.1671443,0.90,0.093928681,0.119524906
+86,South Africa carbon tax,Carbon tax,South Africa,2019,459.1671443,0.9,0.093928681,0.119524906
 87,Spain carbon tax,Carbon tax,Spain,2014,6.231775,0.01,0.077364,0.121572
 88,Sweden carbon tax,Carbon tax,Sweden,1991,25.83529432,0.05,2.267025456,2.4347209
 89,Switzerland ETS,ETS,Switzerland,2008,5.059056761,0.01,0.01753057,0.28901093
 90,Switzerland carbon tax,Carbon tax,Switzerland,2008,15.74989369,0.03,1.261768207,1.268261011
-95,Tianjin pilot ETS,ETS,Tianjin,2013,53.056773,0.10,0.011898471,0.72655218
-96,Tokyo CaT,ETS,Tokyo,2010,13.26,0.03,0.0,0.053469722
+95,Tianjin pilot ETS,ETS,Tianjin,2013,53.056773,0.1,0.011898471,0.72655218
+96,Tokyo CaT,ETS,Tokyo,2010,13.26,0.03,0,0.053469722
 98,UK Carbon Price Support,Carbon tax,United Kingdom,2013,97.38434524,0.19,0.6899025,0.904572539
 99,UK ETS,ETS,United Kingdom,2021,129.8457937,0.25,5.663799247,12.56197732
 101,Ukraine carbon tax,Carbon tax,Ukraine,2011,197.4845544,0.39,0.040454761,0.042386062
