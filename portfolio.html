@@ -3,7 +3,6 @@
 
 
 <head>
-    <link class="icon" rel="icon" href="data-science-logo-clipart-3.jpg" sizes="32x32">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +23,7 @@
 </head>
 
 <body>
-    <!-- First create a div for week 2 -->
+    <!-- First create a div portfolio header-->
     <div style="text-align:center">
     <div class ="portfolio">
       <h1>Data<span style="color:#264353" id = "style">Science</span></h1>
@@ -35,7 +34,7 @@
         
       </div>
     </div>
-
+ <!-- WEEK 1-->
     <div class="week1">
       <h2>Portfolio</h2>
         <h3>Week 1</h3>
@@ -47,7 +46,7 @@
         <p>My second chart looks at carbon emissions per capita by region</p>
         <div class="chart" id="Carbon_per_capita"> </div>
     </div>
-
+<!-- WEEK 2-->
     <div class="week2">
          <h3>Week 2</h3>    
         <p>This chart looks at IMf lending outstanding by all members, in nominal terms</p>
@@ -59,7 +58,7 @@
         
         <p>Once the data has been realised by adjusting the lending to a proportion of world GDP, it can be seen that the riskiest year was 1984, due to the highest proportion of credit outstanding.</p>
       </div>   
-        
+<!-- WEEK 3-->
       <div class="week3">
       <h3>Week 3</h3>
         <p>This chart looks at electricity generation from solar of different regions</p>
@@ -68,14 +67,14 @@
         <div class="chart" id="solar_energy_2"></div>
         <p>The second chart visualisation displays labels for all values of solar generation for the hovered time. This allows for a precise values to be read, allowing for easy comparison between entities.</p>
       </div>
-
+<!-- WEEK 4-->
       <div class="week4">
         <h3>Week 4</h3>
         <p>This chart shows the top 25 ESG companies from 2021. The data scraping can be found on my <a href="https://colab.research.google.com/drive/1gJHSp6DZ3Xg8Z1RDzJ50J9Qsdsye3OMr#scrollTo=wA1nfSxBwikO" id="link_colab">Colab</a> and the data source can be found <a href="https://www.investors.com/news/esg-companies-list-2021-best-esg-stocks-environmental-social-governance-values-2/" id="link_ESG">here</a>.</p>
         <div class="chart" id="ESG"></div>
         <p>I chose this site as it was one of the few sources which had data on ESG companies, and this topic may be addressed in my project.</p>
       </div>
-
+<!-- WEEK 5-->
       <div class="week5">
       <h3>Week 5</h3>
       <p>Below are nine visualisations build from the ONS API database, the collection of the API data can be found on my <a href="https://colab.research.google.com/drive/1zfnTU7QBqp_B_Yal1lllqgV8o8WQjD58#scrollTo=PSOS68u54H3c" id="link_colab2">Colab</a>. The charts track differing measures of inflation in the UK.</p>
@@ -91,7 +90,7 @@
       <div class="flex-item" id="LJ7O"></div>
       </div>
     </div>
-    
+<!-- WEEK 7-->    
     <div class="week7">
       <h3>Week 7</h3>
       <p>Here are two maps, a base map of South America and a map showing deforestation in South America from 2010-2015. Deforestation is measured in 1000 hectares removed per year.  </p>
@@ -100,7 +99,7 @@
       <div class="chart" id="map-deforestation-SA"></div>
       </div>
     </div>
-
+<!-- WEEK 8-->
     <div class="week8">
       <h3>Week 8</h3>
       <p>An argument made at the festival of economics was that Russian oil brings 5-7 times more revenue than gas. Below are three charts of oil and gas rents:</p>
@@ -113,21 +112,35 @@
 
 
     </div>
-    
+<!-- WEEK 9-->    
     <div class = "week9">
       <h3>Week 9</h3>
       <p>Two advanced charts, focused around ideas for my project.</p>
       <div class="flex-container2">
       <div class="chart" id="chart1-w9"></div>
       <div class="chart" id="chart2-w9"></div>
+    </div>     
     </div>
+<!-- WEEK 10/11-->
+    <div class="week10">
+      <h3>Week 10 & 11</h3>
+      <p>My hypothesis is that onshore wind levelized cost of energy (LCOE) will fall as onshore wind capacity grows, due to economies of scale. To investigate the relationship I have performed a regression of onshore wind capacity on onshore wind LCOE.</p>
+      <img src="chart-wind-reg-final.png" alt="image">
+      <p>Data visualisation can be found <a href="https://colab.research.google.com/drive/1BfPu2I4RV4j82733QszVAYWoLlFkproN">here</a> and cleaning <a href="https://colab.research.google.com/drive/1llNOzCI-ea6Q9IPFQO_7M7RlRr66rmbe">here</a>. The regression model fits the data accurately, shown by the high  R<sup>2</sup> of 0.982. This implies there is likely a causal relationship between LCOE and capacity for onshore wind.</p>
       
+      <p>My second hypothesis was that PCA on different measures of carbon pricing systems such as their value and proportion of gloabl GHG emissions could be used to identify which type of scheme was used.</p>
+      <div class="chart" id="chart-HW11"></div>
+      <p>The chart shows that ETS systems are better categorized by their associated measures than carbon tax systems, which are more clustered from PCA. Data cleaning and manipulation can be found <a href="https://colab.research.google.com/drive/19CYVsd9an5G1FRchkwE5Cjdbp_Ltg_nd#scrollTo=KdPQTOnwJ34X">here.</a></p>
+    
+    
+    
     </div>
+
 
 
 </body>
     
-    
+    <!-- SPECIFY CHARTS FOR DIFFERENT SCREEN SIZES-->
 <script>
         //Define charts:
     let width=screen.width
@@ -145,6 +158,7 @@
         
         var myChart22 = 'chart-renewable-share.json'
         var myChart23 = 'chart-envtax.json'
+        var myChart24 = "chart-HW11.json"
       } else {
         myChart1 = 'portfolio-chart-mobile1.json'
         myChart2 = 'portfolio-chart-mobile2.json'
@@ -157,6 +171,7 @@
         myChart18 ='portfolio-map-mobile-2.json'
         myChart22 = 'portfolio-chart-mobile8.json'
         myChart23 = 'portfolio-chart-mobile9.json'
+        myChart24 = 'chart-HW11-mobile.json'
       }
        
         var myChart8 = 'Chart-ONSDKC3.json'
@@ -198,6 +213,7 @@
         vegaEmbed('#chart3-w8', myChart21)
         vegaEmbed('#chart1-w9', myChart22)
         vegaEmbed('#chart2-w9', myChart23)
+        vegaEmbed('#chart-HW11', myChart24)
         
      
 
@@ -205,5 +221,7 @@
 </script>
 
 </html>
+    
+    
     
     
