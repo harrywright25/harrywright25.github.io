@@ -255,7 +255,7 @@ img{
     margin-bottom: 20px;
     width: 450px;
 }
-@media (max-width < 1000px){
+@media only screen and (max-width: 600px){
 
     img{
         background-color: white;
@@ -265,7 +265,7 @@ img{
     border-style: solid;
     border-color: white;
     margin-bottom: 20px;
-    width:200px
+    width: 200px;
         
     }
 }
