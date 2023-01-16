@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-<head>
+<!-- first line gives image for page in tab -->
+<head>  
     <link class="icon" rel="icon" href="data-science-logo-clipart-3.jpg" sizes="32x32">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,6 +25,7 @@
 
 
 <body>
+    <!-- HEADER AND BUTTONS -->
     <div style="text-align:center">
    <div class="project">
     <h1>Data<span style="color:#264353" id = "style">Science</span></h1>
@@ -34,26 +35,22 @@
         <a href="https://github.com/harrywright25" id="link3">Github</a>
       </div>
    </div>
-
+<!-- MAIN BODY -->
    <div class="main-body">
     <h2>Project</h2>
     <h3>Is there an economic incentive to switch to renewable energy sources?</h3>
-    <p>Aim: To analyse the costs and benefits of renewable energy, specifically when compared to traditional fossil fuel energy sources. With an increasing pressure on global institutions to reduce their CO2 emissions due to an ever-growing climate crisis, investigating the effectiveness of more sustainable energy supplies is of great importance.</p>
+    <p>Aim: to analyze the costs and benefits of renewable energy, specifically when compared to traditional fossil fuel sources. With increasing pressure of global institutions to reduce their CO2 emissions due to an ever-growing climate crisis, investigating the economic trends of more sustainable energy supplies is of great importance.</p>
     <div class="header">
     <h3>Chart 1:</h3>
-    </div>
+    </div><!-- CHART 1 -->
     <div class = "chart" id="chart1">
       
     </div>
-    <p>The chart shows global energy consumption by source. 
-        It can clearly be seen that fossil fuels dominate overall energy consumption, 
-        with renewables only experiencing increases in recent years. 
-        I coded a 'selection' panel in Vega-lite to allow for individual source obersavtion. 
-        This shows that renewable energy consumption has increased drastically post-2000 when compared to fossil fuels.
-    This may be due to many reasons. To investigate this further I will look at the different costs associated with each source. 
+    <p>
+        This chart shows global energy consumption by source. It can be seen that fossil fuels dominate overall consumption, with renewables only experiencing increases in recent years. I coded a ‘selection’ panel in Vega-Lite to allow for specific source observation, to make individual trends clearer. Renewable consumption can be seen to rapidly increase post-2000.
 Data cleaning can be found <a href="https://colab.research.google.com/drive/1DRvx3trm38UV1odqJJ1rfjU6SdtxX8yH#scrollTo=EPSpcwIXGlZm" id="link_colab1">here</a>.</p>
-    
-    <div class="header">
+    <!-- CHART 2 -->
+    <div class="header"> 
     <h3>Chart 2:</h3>
     </div>
     <div class="flex-box2">
@@ -64,31 +61,23 @@ Data cleaning can be found <a href="https://colab.research.google.com/drive/1DRv
     <p>The bar charts show the LCOE of energy by source. It shows that the costs associated with fossil fuels and renewables are intrinsically
     different; renewables have high initial capital costs but low running costs (fuel cost) and crutially do not emit CO2. Only solar's full cost is dramatically more than fossil fuels. I scraped the data from <a href="https://energyeducation.ca/encyclopedia/Levelized_cost_of_energy"
     id="scrape_link1">Energy Education</a>. Find data scraping and cleaning <a href="https://colab.research.google.com/drive/1j_fTDxujbYf5PcZ3PpQyTBFAriZE8ebK#scrollTo=oSqUaZHWVTSQ" id="link_colab2">here</a>.</p>
+    <!-- CHART 3 -->
     <div class="header">
     <h3>Chart 3:</h3>
     </div>
     <div class = "chart" id = "chart4">
         
     </div>
-    <p>Many schemes have introduced a carbon price which is aimed at reducing CO2 emissions, which could be a factor contributing to renewables becoming cheaper. This chart shows European carbon emission futures prices with a 30-day rolling mean. It can clearly be seen that prices have increased dramatically in recent years. 
-        This means an increased cost burden of polluting through the use of fossil fuels and incentivizes swapping to cleaner energy. Finding data on carbon emissions prices was difficult</p>
+    <p>This chart shows the European carbon price which has increased dramatically in recent years. This may be a factor contributing to the economic validity of renewable energy. I wanted to use an API to automate this chart, but finding free API data on carbon pricing schemes was difficult. I used a 30-day rolling average to better understand the trend the price follows. Find the data cleaning <a href="https://colab.research.google.com/drive/1NpMeXcarppzX_7r8gvzJFKhxqG0d_YMO">here</a>.</p>
 
 
-    <div class="header">
-    <h3>Chart 4:</h3>
-    </div>
-
-    <div class = "chart" id = "chart5">
-       
-    </div>
-    <p>This is a regression of global natural gas prices (U.S. Dollars per Million Metric British Thermal Unit) on the carbon futures prices. I suspected that an incresing carbon price would likely cause the price of fossil fuels to increase.
-         I had to combine two datasets to visualise the chart and then used the regress function in Vega-lite. A challenge of this was merging the datasets. When I fist attempted this with a 'pd.concat()' function, the format was very difficult to change. Instead, by making the date column of both datasets have the same format, I could use a merge function to join them, which gave me the correct format I wanted and removed any irrelevant data points.
-         A positive relationship is found between the variables. Following events such as COP26, many countries are implementing carbon pricing schemes and with the climate crisis becoming more urgent, the price of carbon will likely keep increasing, causing fossil fuels to keep getting more expensive. The data cleaning can be seen <a href="https://colab.research.google.com/drive/1NpMeXcarppzX_7r8gvzJFKhxqG0d_YMO" id="link_colab3">here</a>.</p>
     
+    
+    <!-- CHART 4 & 5 -->
     <div class="header">   
-    <h3>Chart 5 & 6:</h3>  
+    <h3>Chart 4 & 5:</h3>  
     </div>
-    <p>Charts 5 and 6 show the LCOE and installed energy capacity by source respectively. It appears that as capacity is increase, the LCOE of renewables is decreasing. This follows economies of scale, and implies that costs will likely keep falling as more renewable energy is installed.</p>
+    
    <div class="flex-box">
     <div class = "chart" id = "chart6">
         
@@ -97,43 +86,57 @@ Data cleaning can be found <a href="https://colab.research.google.com/drive/1DRv
     <div class = "chart" id = "chart7">
         
     </div>
+    <p>Charts 4 and 5 show the LCOE and installed energy capacity by source respectively. For most sources, capacity can be seen to increase, which the LCOE decreases.  I used a ‘row’ function in Vega-Lite to repeat charts by source so that clear trends can be seen.  I wanted to merge two datasets so I could repeat the view for both the X and Y axes, having capacity against cost plotted by source. However, Vega-Lite specifications cannot have two repeat functions, so I split these into two charts and used time as the X axes. Data cleaning can be found <a href="https://colab.research.google.com/drive/1llNOzCI-ea6Q9IPFQO_7M7RlRr66rmbe#scrollTo=7-ZQKt35w4Oj">here</a>.</p>
    </div>
     
-   
+   <!-- CHART 6 -->
     <div class="header">
-    <h3>Chart 7:</h3>
+    <h3>Chart 6:</h3>
     </div>
-    <p>I wanted to perform a regression of solar PV costs on capacity. Firstly, I created a predictive power score matrix in pandas, including logarithmic scales for both measures. The PP score picks up linear and non-linear relationships, so this was used to check if using a logarithmic scale would give a higher correlation.  </p>
+    
     <div class = "chart" id = "chart8">
         
     </div>
-    <p>This lead me to regress Solar PV LCOE on log_solar as they had the highest predictive power score. I created the PP score matrix <a href="https://colab.research.google.com/drive/1UZ4CfkaurrLllk-uvIcduati67FNtEFT" id="link_ppscore">here</a> from a dataset that I <a href="https://colab.research.google.com/drive/1llNOzCI-ea6Q9IPFQO_7M7RlRr66rmbe" id="link_data">cleaned</a> before.</p>
+    <p>From the previous findings in charts 4 and 5, I wanted to perform regressions of some sources LCOE and capacity. Using a <a href="https://towardsdatascience.com/rip-correlation-introducing-the-predictive-power-score-3d90808b9598">predictive power score</a> matrix in pandas, I investigated the correlations between solar PV LCOE and capacity, also including logarithmic values as the PP score detects both linear and non-linear relationships. The highest correlation was found for solar PV LCOE and the log of solar capacity.This lead me to regress Solar PV LCOE on log_solar. I created the PP score matrix <a href="https://colab.research.google.com/drive/1UZ4CfkaurrLllk-uvIcduati67FNtEFT" id="link_ppscore">here</a> from a dataset that I <a href="https://colab.research.google.com/drive/1llNOzCI-ea6Q9IPFQO_7M7RlRr66rmbe" id="link_data">cleaned</a> before.</p>
     <div class="header">
-    <h3>Chart 8:</h3>
+ <!-- CHART 7 -->
+    <h3>Chart 7:</h3>
     </div>
-    <p>Firstly, I regressed solar capacity on cost, giving an R<sup>2</sup> of 0.63. I then regressed the log of capacity on cost, shown below, which gave an R<sup>2</sup> of 0.92. This shows that the relationship was non-linear, as the log regression fits the datas much better. This was picked up by the PP score. The regression shows that as capacity increases, the cost of the energy decreases.</p>
+    
     <div class = "chart" id = "chart9">
        
     </div>
-    <p>I collected the data from <a href="https://pxweb.irena.org/pxweb/en/IRENASTAT/IRENASTAT__Power%20Capacity%20and%20Generation/RECAP_2022_cycle2.px/">IRENA</a> and <a href="https://ourworldindata.org/grapher/levelized-cost-of-energy">Our World in Data</a> and then merged the two datasets. </p>
+    <p>When regressing solar PV LCOE on capacity (linear) the R<sup>2</sup> was 0.63. Then, using the logarithmic capacity values, the regression gave an R<sup>2</sup> of 0.92. This shows that the regression model fits the data much better when using a logarithmic scale and implies that the relationship is non-linear. This was picked up by the PP score matrix. The relationship shows that as capacity increases, the cost of energy decreases. A challenge was merging the datasets in the right format. When I tried this initially, using a ‘pd.concat()’ function, the data became very difficult to manipulate.  By instead using a ‘merge’ function, on the ‘Year’ column, I could join the datasets in the desired format and removed any irrelevant data points. I collected the data from <a href="https://pxweb.irena.org/pxweb/en/IRENASTAT/IRENASTAT__Power%20Capacity%20and%20Generation/RECAP_2022_cycle2.px/">IRENA</a> and <a href="https://ourworldindata.org/grapher/levelized-cost-of-energy">Our World in Data</a> and then <a href="https://colab.research.google.com/drive/1llNOzCI-ea6Q9IPFQO_7M7RlRr66rmbe#scrollTo=7-ZQKt35w4Oj">merged</a> the two datasets. Look for logarithmic transformation <a href="https://colab.research.google.com/drive/1UZ4CfkaurrLllk-uvIcduati67FNtEFT">here.</a> </p>
+
+    <!-- CHART 8 -->
+    <div class="header">
+        <h3>Chart 8</h3>
+        
+    <img src="chart-wind-reg-final.png" alt="image">
+    <p>Using the same dataset I regressed LCOE on capacity for onshore wind in python, finding another strong, negative relationship, which shows that as capacity has been increasing, LCOE of onshore wind has been decreasing.The data visualisation was done in <a href="https://colab.research.google.com/drive/1BfPu2I4RV4j82733QszVAYWoLlFkproN">python</a> using Scikit-Learn package to perform the machine learning regression.</p>
+    </div>
+
+<!-- CCNCLUSION -->
+    <div class-="conclusion-body">
+        <h3>Conclusions</h3>
+        <p>Overall, there does seem to be an economic incentive to switch to renewable energy. With rising prices of carbon adding to the cost pressure of fossil fuels, renewables have experienced falling LCOE. This fall is correlated with and attributed to the increased installment capacity of renewable energy. As global pressures of reducing CO2 emissions increase, renewables present a sustainable platform for energy which has the potential to become cheaper than traditional sources, provided there in enough investment into the installment capacity of renewables. Other factors will have an impact on the cost structure of energy, and more research into what drives the changes seen is needed to better understand the full role renewables will play in the future of energy.</p>
+       </div>
+   </div>
+
+   
+
 
 
 
 
    </div>
 
-
-
-
-
-
-
-   </div>
+   
 </body>
 <script>
 
 
-
+/*DEFINING CHART FOR MEDIA SCREEN SIZES*/
 let width = screen.width
         if (width > 1000){
             var myChart1 = "project_chart1.json";
@@ -156,7 +159,7 @@ let width = screen.width
             myChart9 = "chart-solar-reg-mobile.json"
         }
         
-  
+ /*EMBEDDING CHARTS*/ 
         vegaEmbed('#chart1', myChart1)
         vegaEmbed('#chart3', myChart3)
         vegaEmbed('#chart4', myChart4)
