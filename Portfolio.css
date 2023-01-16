@@ -53,7 +53,7 @@ h3{
     text-shadow: 2px 2px rgba(0, 0, 0)
 }
 
-    
+/* Main heading of page*/    
 .portfolio{
     margin: auto; 
     width: 90%;
@@ -69,7 +69,7 @@ h3{
 }
 
 
-
+/* changing links and buttons*/
 .a{
     color: whitesmoke;
 }
@@ -108,7 +108,7 @@ h3{
     
 }
 
-
+/*WEEK DESIGN*/
 .week1{
     margin: auto; 
     width: 90%;
@@ -216,8 +216,21 @@ h3{
     box-shadow: 4px 3px rgba(0, 0, 0, 0.8) ;
 }
 
+.week10{
+    margin: auto; 
+    width: 90%;
+    background-color: #467c9b ;    
+    border: solid;
+    border-radius: 20px;
+    border-color:#0d181e;
+    margin-bottom:20px;
+    margin-top: 20px;
+    float: center;
+    box-shadow: 4px 3px rgba(0, 0, 0, 0.8) ;
+}
 
-/* Set the apperance of the class, chart */
+
+/*charts*/
 .chart{
     background-color: white;
     margin: solid;
@@ -231,7 +244,33 @@ h3{
    
    
 }
+/*REGRESSION CHART WITH RESIZING FOR PHONE*/
+img{
+    background-color: white;
+    margin: solid;
+    border-radius: 15px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
+    margin-bottom: 20px;
+    width: 450px;
+}
+@media (max-width < 1000px){
 
+    img{
+        background-color: white;
+    margin: solid;
+    border-radius: 15px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
+    margin-bottom: 20px;
+    width:200px
+        
+    }
+}
+
+/*CONTAINERS OF CHARTS*/
 .box-container{
     display: flex;
     column-gap: 20px;
