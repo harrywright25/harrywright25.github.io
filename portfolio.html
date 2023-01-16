@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- first line gives image for page in tab -->
-<head>  
-    <link class="icon" rel="icon" href="data-science-logo-clipart-3.jpg" sizes="32x32">
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Title for the page -->
-    <title>Harry Wright's Data Science Project</title>
+    <title>Portfolio</title>
 
     <!-- Link to my style sheet -->
-    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="Portfolio.css">
 
     <!--The next three lines allow the Vega embed-->
     <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
@@ -23,166 +22,204 @@
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 </head>
 
-
 <body>
-    <!-- HEADER AND BUTTONS -->
+    <!-- First create a div portfolio header-->
     <div style="text-align:center">
-   <div class="project">
-    <h1>Data<span style="color:#264353" id = "style">Science</span></h1>
-    <div class="menu">
+    <div class ="portfolio">
+      <h1>Data<span style="color:#264353" id = "style">Science</span></h1>
+      <div class="menu">
         <a href="index.html" id="link1">Home</a>
-        <a href="portfolio.html" id="link2">Portfolio</a>
+        <a href="project.html" id="link2">Project</a>
         <a href="https://github.com/harrywright25" id="link3">Github</a>
+        
       </div>
-   </div>
-<!-- MAIN BODY -->
-   <div class="main-body">
-    <h2>Project</h2>
-    <h3>Is there an economic incentive to switch to renewable energy sources?</h3>
-    <p>Aim: to analyze the costs and benefits of renewable energy, specifically when compared to traditional fossil fuel sources. With increasing pressure of global institutions to reduce their CO2 emissions due to an ever-growing climate crisis, investigating the economic trends of more sustainable energy supplies is of great importance.</p>
-    <div class="header">
-    <h3>Chart 1:</h3>
-    </div><!-- CHART 1 -->
-    <div class = "chart" id="chart1">
+    </div>
+ <!-- WEEK 1-->
+    <div class="week1">
+      <h2>Portfolio</h2>
+        <h3>Week 1</h3>
+       
+        <p>The first chart tracks forest area by country.</p>
+        <div class="chart" id="Forest_area"></div>
+
+        
+        <p>My second chart looks at carbon emissions per capita by region</p>
+        <div class="chart" id="Carbon_per_capita"> </div>
+    </div>
+<!-- WEEK 2-->
+    <div class="week2">
+         <h3>Week 2</h3>    
+        <p>This chart looks at IMf lending outstanding by all members, in nominal terms</p>
+        
+        <div class="chart" id="IMF_lendingoutstanding"></div>
+       
+        <p>IMF lending outstanding by all members, as a proportion of World GDP (current prices)</p>
+        <div class="chart" id="IMF_lending"></div>
+        
+        <p>Once the data has been realised by adjusting the lending to a proportion of world GDP, it can be seen that the riskiest year was 1984, due to the highest proportion of credit outstanding.</p>
+      </div>   
+<!-- WEEK 3-->
+      <div class="week3">
+      <h3>Week 3</h3>
+        <p>This chart looks at electricity generation from solar of different regions</p>
+        <div class="chart" id="solar_energy"></div>
+        <p>This chart is a different visualisation of the same data on solar energy</p>
+        <div class="chart" id="solar_energy_2"></div>
+        <p>The second chart visualisation displays labels for all values of solar generation for the hovered time. This allows for a precise values to be read, allowing for easy comparison between entities.</p>
+      </div>
+<!-- WEEK 4-->
+      <div class="week4">
+        <h3>Week 4</h3>
+        <p>This chart shows the top 25 ESG companies from 2021. The data scraping can be found on my <a href="https://colab.research.google.com/drive/1gJHSp6DZ3Xg8Z1RDzJ50J9Qsdsye3OMr#scrollTo=wA1nfSxBwikO" id="link_colab">Colab</a> and the data source can be found <a href="https://www.investors.com/news/esg-companies-list-2021-best-esg-stocks-environmental-social-governance-values-2/" id="link_ESG">here</a>.</p>
+        <div class="chart" id="ESG"></div>
+        <p>I chose this site as it was one of the few sources which had data on ESG companies, and this topic may be addressed in my project.</p>
+      </div>
+<!-- WEEK 5-->
+      <div class="week5">
+      <h3>Week 5</h3>
+      <p>Below are nine visualisations build from the ONS API database, the collection of the API data can be found on my <a href="https://colab.research.google.com/drive/1zfnTU7QBqp_B_Yal1lllqgV8o8WQjD58#scrollTo=PSOS68u54H3c" id="link_colab2">Colab</a>. The charts track differing measures of inflation in the UK.</p>
+      <div class="flex-container">
+      <div class="flex-item" id="D7CB"></div>
+      <div class="flex-item" id="DKC3"></div>
+      <div class="flex-item" id="J3VI"></div>
+      <div class="flex-item" id="L5M5"></div>
+      <div class="flex-item" id="L55O"></div>
+      <div class="flex-item" id="L59C"></div>
+      <div class="flex-item" id="L78Q"></div>
+      <div class="flex-item" id="L522"></div>
+      <div class="flex-item" id="LJ7O"></div>
+      </div>
+    </div>
+<!-- WEEK 7-->    
+    <div class="week7">
+      <h3>Week 7</h3>
+      <p>Here are two maps, a base map of South America and a map showing deforestation in South America from 2010-2015. Deforestation is measured in 1000 hectares removed per year.  </p>
+      <div class="map-flex">
+      <div class="chart" id="base-map-SA"></div>
+      <div class="chart" id="map-deforestation-SA"></div>
+      </div>
+    </div>
+<!-- WEEK 8-->
+    <div class="week8">
+      <h3>Week 8</h3>
+      <p>An argument made at the festival of economics was that Russian oil brings 5-7 times more revenue than gas. Below are three charts of oil and gas rents:</p>
+      <div class="box-container">
+      <div class="box-item" id="chart1-w8"></div>
+      <div class="box-item" id="chart2-w8"></div>
+      <div class="box-item" id="chart3-w8"></div>
+    </div>
+      <p>It can be seen that oil rents range between 2-3.5 times more than natural gas rents in Russia. Rents are estimated differences between the price and cost of the commodity. This implies that oil does not bring 5-7 times more revenue, unless the cost of producing gas is far higher than oil.</p>
+
+
+    </div>
+<!-- WEEK 9-->    
+    <div class = "week9">
+      <h3>Week 9</h3>
+      <p>Two advanced charts, focused around ideas for my project.</p>
+      <div class="flex-container2">
+      <div class="chart" id="chart1-w9"></div>
+      <div class="chart" id="chart2-w9"></div>
+    </div>     
+    </div>
+<!-- WEEK 10/11-->
+    <div class="week10">
+      <h3>Week 10 & 11</h3>
+      <p>My hypothesis is that onshore wind levelized cost of energy (LCOE) will fall as onshore wind capacity grows, due to economies of scale. To investigate the relationship I have performed a regression of onshore wind capacity on onshore wind LCOE.Data visualisation can be found <a href="https://colab.research.google.com/drive/1BfPu2I4RV4j82733QszVAYWoLlFkproN">here</a> and cleaning <a href="https://colab.research.google.com/drive/1llNOzCI-ea6Q9IPFQO_7M7RlRr66rmbe">here</a>. The regression model fits the data accurately, shown by the high  R<sup>2</sup> of 0.982. This implies there is likely a causal relationship between LCOE and capacity for onshore wind.</p>
+      <img src="chart-wind-reg-final.png" alt="image">
       
-    </div>
-    <p>
-        This chart shows global energy consumption by source. It can be seen that fossil fuels dominate overall consumption, with renewables only experiencing increases in recent years. I coded a ‘selection’ panel in Vega-Lite to allow for specific source observation, to make individual trends clearer. Renewable consumption can be seen to rapidly increase post-2000.
-Data cleaning can be found <a href="https://colab.research.google.com/drive/1DRvx3trm38UV1odqJJ1rfjU6SdtxX8yH#scrollTo=EPSpcwIXGlZm" id="link_colab1">here</a>.</p>
-    <!-- CHART 2 -->
-    <div class="header"> 
-    <h3>Chart 2:</h3>
-    </div>
-    <div class="flex-box2">
-    <div class = "chart" id = "chart3">
-       
-    </div>
-</div>
-    <p>The bar charts show the LCOE of energy by source. It shows that the costs associated with fossil fuels and renewables are intrinsically
-    different; renewables have high initial capital costs but low running costs (fuel cost) and crutially do not emit CO2. Only solar's full cost is dramatically more than fossil fuels. I scraped the data from <a href="https://energyeducation.ca/encyclopedia/Levelized_cost_of_energy"
-    id="scrape_link1">Energy Education</a>. Find data scraping and cleaning <a href="https://colab.research.google.com/drive/1j_fTDxujbYf5PcZ3PpQyTBFAriZE8ebK#scrollTo=oSqUaZHWVTSQ" id="link_colab2">here</a>.</p>
-    <!-- CHART 3 -->
-    <div class="header">
-    <h3>Chart 3:</h3>
-    </div>
-    <div class = "chart" id = "chart4">
-        
-    </div>
-    <p>This chart shows the European carbon price which has increased dramatically in recent years. This may be a factor contributing to the economic validity of renewable energy. I wanted to use an API to automate this chart, but finding free API data on carbon pricing schemes was difficult. I used a 30-day rolling average to better understand the trend the price follows. Find the data cleaning <a href="https://colab.research.google.com/drive/1NpMeXcarppzX_7r8gvzJFKhxqG0d_YMO">here</a>.</p>
-
-
+      
+      <p>My second hypothesis was that PCA on different measures of carbon pricing systems such as their value and proportion of gloabl GHG emissions could be used to identify which type of scheme was used.The chart shows that ETS systems are better categorized by their associated measures than carbon tax systems, which are more clustered from PCA. Data cleaning and manipulation can be found <a href="https://colab.research.google.com/drive/19CYVsd9an5G1FRchkwE5Cjdbp_Ltg_nd#scrollTo=KdPQTOnwJ34X">here.</a></p>
+      <div class="chart" id="chart-HW11"></div>
+      <p></p>
     
     
-    <!-- CHART 4 & 5 -->
-    <div class="header">   
-    <h3>Chart 4 & 5:</h3>  
-    </div>
     
-   <div class="flex-box">
-    <div class = "chart" id = "chart6">
-        
     </div>
 
-    <div class = "chart" id = "chart7">
-        
-    </div>
-    <p>Charts 4 and 5 show the LCOE and installed energy capacity by source respectively. For most sources, capacity can be seen to increase, which the LCOE decreases.  I used a ‘row’ function in Vega-Lite to repeat charts by source so that clear trends can be seen.  I wanted to merge two datasets so I could repeat the view for both the X and Y axes, having capacity against cost plotted by source. However, Vega-Lite specifications cannot have two repeat functions, so I split these into two charts and used time as the X axes. Data cleaning can be found <a href="https://colab.research.google.com/drive/1llNOzCI-ea6Q9IPFQO_7M7RlRr66rmbe#scrollTo=7-ZQKt35w4Oj">here</a>.</p>
-   </div>
-    
-   <!-- CHART 6 -->
-    <div class="header">
-    <h3>Chart 6:</h3>
-    </div>
-    
-    <div class = "chart" id = "chart8">
-        
-    </div>
-    <p>From the previous findings in charts 4 and 5, I wanted to perform regressions of some sources LCOE and capacity. Using a <a href="https://towardsdatascience.com/rip-correlation-introducing-the-predictive-power-score-3d90808b9598">predictive power score</a> matrix in pandas, I investigated the correlations between solar PV LCOE and capacity, also including logarithmic values as the PP score detects both linear and non-linear relationships. The highest correlation was found for solar PV LCOE and the log of solar capacity.This lead me to regress Solar PV LCOE on log_solar. I created the PP score matrix <a href="https://colab.research.google.com/drive/1UZ4CfkaurrLllk-uvIcduati67FNtEFT" id="link_ppscore">here</a> from a dataset that I <a href="https://colab.research.google.com/drive/1llNOzCI-ea6Q9IPFQO_7M7RlRr66rmbe" id="link_data">cleaned</a> before.</p>
-    <div class="header">
- <!-- CHART 7 -->
-    <h3>Chart 7:</h3>
-    </div>
-    
-    <div class = "chart" id = "chart9">
-       
-    </div>
-    <p>When regressing solar PV LCOE on capacity (linear) the R<sup>2</sup> was 0.63. Then, using the logarithmic capacity values, the regression gave an R<sup>2</sup> of 0.92. This shows that the regression model fits the data much better when using a logarithmic scale and implies that the relationship is non-linear. This was picked up by the PP score matrix. The relationship shows that as capacity increases, the cost of energy decreases. A challenge was merging the datasets in the right format. When I tried this initially, using a ‘pd.concat()’ function, the data became very difficult to manipulate.  By instead using a ‘merge’ function, on the ‘Year’ column, I could join the datasets in the desired format and removed any irrelevant data points. I collected the data from <a href="https://pxweb.irena.org/pxweb/en/IRENASTAT/IRENASTAT__Power%20Capacity%20and%20Generation/RECAP_2022_cycle2.px/">IRENA</a> and <a href="https://ourworldindata.org/grapher/levelized-cost-of-energy">Our World in Data</a> and then <a href="https://colab.research.google.com/drive/1llNOzCI-ea6Q9IPFQO_7M7RlRr66rmbe#scrollTo=7-ZQKt35w4Oj">merged</a> the two datasets. Look for logarithmic transformation <a href="https://colab.research.google.com/drive/1UZ4CfkaurrLllk-uvIcduati67FNtEFT">here.</a> </p>
-
-    <!-- CHART 8 -->
-    <div class="header">
-        <h3>Chart 8</h3>
-        
-    <img src="chart-wind-reg-final.png" alt="image">
-    <p>Using the same dataset I regressed LCOE on capacity for onshore wind in python, finding another strong, negative relationship, which shows that as capacity has been increasing, LCOE of onshore wind has been decreasing.The data visualisation was done in <a href="https://colab.research.google.com/drive/1BfPu2I4RV4j82733QszVAYWoLlFkproN">python</a> using Scikit-Learn package to perform the machine learning regression.</p>
-    </div>
-
-<!-- CCNCLUSION -->
-    <div class-="conclusion-body">
-        <h3>Conclusions</h3>
-        <p>Overall, there does seem to be an economic incentive to switch to renewable energy. With rising prices of carbon adding to the cost pressure of fossil fuels, renewables have experienced falling LCOE. This fall is correlated with and attributed to the increased installment capacity of renewable energy. As global pressures of reducing CO2 emissions increase, renewables present a sustainable platform for energy which has the potential to become cheaper than traditional sources, provided there in enough investment into the installment capacity of renewables. Other factors will have an impact on the cost structure of energy, and more research into what drives the changes seen is needed to better understand the full role renewables will play in the future of energy.</p>
-       </div>
-   </div>
-
-   
 
 
-
-
-
-   </div>
-
-   
 </body>
+    
+    <!-- SPECIFY CHARTS FOR DIFFERENT SCREEN SIZES-->
 <script>
-
-
-/*DEFINING CHART FOR MEDIA SCREEN SIZES*/
-let width = screen.width
-        if (width > 1000){
-            var myChart1 = "project_chart1.json";
-            var myChart3 = "project-chart3.json";
-            var myChart4 = "project-chart4.json";
-            var myChart5 = "project-chart5.json";
-            var myChart6 = "chart-capacity.json";
-            var myChart7 = "chart-cost.json";
-            var myChart8 = "PPScore.json";
-            var myChart9 = "chart-solar-reg.json"
-
-        } else{
-            myChart1 = "project-chart1-mobile.json";
-            myChart3 = "project-chart3-mobile.json";
-            myChart4 = "project-chart4-mobile.json";
-            myChart5 = "project-chart5-mobile.json";
-            myChart6 = "chart-capacity-mobile.json"
-            myChart7 = "chart-cost-mobile.json"
-            myChart8 = "ppscore-mobile.json";
-            myChart9 = "chart-solar-reg-mobile.json"
-        }
+        //Define charts:
+    let width=screen.width
+      if (width > 1000){
+        var myChart1 = "EnvChart1.json"
+        var myChart2 = "Envchart2.json"
+        var myChart3 = "IMF_lendingoutstanding.json"
+        var myChart4 = "IMF_lending.json";
+        var myChart5 = 'week_3_task.json';
+        var myChart6 = 'week_3_task2.json'
+        var myChart7 = 'week4_task.json'
         
- /*EMBEDDING CHARTS*/ 
-        vegaEmbed('#chart1', myChart1)
-        vegaEmbed('#chart3', myChart3)
-        vegaEmbed('#chart4', myChart4)
-        vegaEmbed('#chart5', myChart5)
-        vegaEmbed('#chart6', myChart6)
-        vegaEmbed('#chart7', myChart7)
-        vegaEmbed('#chart8', myChart8)
-        vegaEmbed('#chart9', myChart9)
-
-
-
-
-
-
-
-
+        var myChart17 = 'base-map-SA.json'
+        var myChart18 = 'map-deforestation-SA.json'
+        
+        var myChart22 = 'chart-renewable-share.json'
+        var myChart23 = 'chart-envtax.json'
+        var myChart24 = "chart-HW11.json"
+      } else {
+        myChart1 = 'portfolio-chart-mobile1.json'
+        myChart2 = 'portfolio-chart-mobile2.json'
+        myChart3 = 'portfolio-chart-mobile3.json'
+        myChart4 = 'portfolio-chart-mobile4.json'
+        myChart5 = 'portfolio-chart-mobile5.json'
+        myChart6 = 'portfolio-chart-mobile6.json'
+        myChart7 ='portfolio-chart-mobile7.json'
+        myChart17 ='portfolio-map-mobile.json'
+        myChart18 ='portfolio-map-mobile-2.json'
+        myChart22 = 'portfolio-chart-mobile8.json'
+        myChart23 = 'portfolio-chart-mobile9.json'
+        myChart24 = 'chart-HW11-mobile.json'
+      }
+       
+        var myChart8 = 'Chart-ONSDKC3.json'
+        var myChart9 = 'Chart-ONSJ3VI.json'
+        var myChart10 = 'Chart-ONSL5M5.json'
+        var myChart11 = 'Chart-ONSL55O.json'
+        var myChart12 = 'Chart-ONSL59C.json'
+        var myChart13 = 'Chart-ONSD7CB.json'
+        var myChart14 = 'Chart-ONSL78Q.json'
+        var myChart15 = 'Chart-ONSL522.json'
+        var myChart16 = 'Chart-ONSLJ7O.json'
+        var myChart19 = 'chart-oilrents.json'
+        var myChart20 = 'chart-naturalgas.json'
+        var myChart21 = 'chart-week8-ratio.json'
+      
+        
+        // Embed charts:
+        
+        vegaEmbed('#Forest_area', myChart1);
+        vegaEmbed('#Carbon_per_capita', myChart2)
+        vegaEmbed('#IMF_lendingoutstanding', myChart3);
+        vegaEmbed('#IMF_lending', myChart4)
+        vegaEmbed('#solar_energy', myChart5);
+        vegaEmbed('#solar_energy_2', myChart6)
+        vegaEmbed('#ESG', myChart7)
+        vegaEmbed('#DKC3', myChart8)
+        vegaEmbed('#J3VI', myChart9)
+        vegaEmbed('#L5M5', myChart10)
+        vegaEmbed('#L55O', myChart11)
+        vegaEmbed('#L59C', myChart12)
+        vegaEmbed('#D7CB', myChart13)
+        vegaEmbed('#L78Q', myChart14)
+        vegaEmbed('#L522', myChart15)
+        vegaEmbed('#LJ7O', myChart16)
+        vegaEmbed('#base-map-SA', myChart17)
+        vegaEmbed('#map-deforestation-SA', myChart18)
+        vegaEmbed('#chart1-w8', myChart19)
+        vegaEmbed('#chart2-w8', myChart20)
+        vegaEmbed('#chart3-w8', myChart21)
+        vegaEmbed('#chart1-w9', myChart22)
+        vegaEmbed('#chart2-w9', myChart23)
+        vegaEmbed('#chart-HW11', myChart24)
+        
+     
 
 
 </script>
 
-
-
-
-
-
 </html>
+    
+    
