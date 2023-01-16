@@ -126,6 +126,19 @@ p{
     box-shadow: 4px 3px rgba(0, 0, 0, 0.8) ;
     
 }
+.references{
+    margin: auto; 
+    width: 90%;
+    background-color: #467c9b ;    
+    border: solid;
+    border-radius: 20px;
+    border-color:#0d181e;
+    margin-bottom:20px;
+    margin-top: 20px;
+    float: center;
+    box-shadow: 4px 3px rgba(0, 0, 0, 0.8) ;
+    
+}
 
 /*CHART DESIGN*/
 .chart{
