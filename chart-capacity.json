@@ -12,7 +12,7 @@
   "data": {"url": "https://raw.githubusercontent.com/harrywright25/harrywright25.github.io/main/data-project-CAP2.csv"},
   
 
-
+ "resolve": {"scale": {"y":"independent"}},
  
 
   
