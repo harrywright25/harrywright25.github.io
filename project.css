@@ -11,7 +11,7 @@ body{
     background-color:	#1b313d;
  
 }
-
+/* Choose the appearance of the tags, h1, h3 and p: */
 h1{
     color:whitesmoke;
     font-family: 'Styrenea web', sans-serif;
@@ -35,7 +35,7 @@ h2{
 
 }
 
-/* Choose the appearance of the tags, h1, h3 and p: */
+
 h3{
     color:whitesmoke;
     font-family: 'Styrenea web', sans-serif;
@@ -47,12 +47,17 @@ h3{
 }
 
 p{
-    color:black;
+    color:whitesmoke;
     font-family: 'Styrenea web', sans-serif;
     text-align: center;
+    margin-left:50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0)
 }
 
-
+/* HEADER DESIGN*/
 .project{
     margin: auto; 
     width: 90%;
@@ -65,6 +70,7 @@ p{
     
     
 }
+/*LINK DESIGN*/
 .a{
     color: whitesmoke;
 }
@@ -106,7 +112,7 @@ p{
    
     
 
-
+/*MAIN BODY DESIGN*/
 .main-body{
     margin: auto; 
     width: 90%;
@@ -121,7 +127,7 @@ p{
     
 }
 
-
+/*CHART DESIGN*/
 .chart{
   background-color: white;
   margin: solid;
@@ -133,6 +139,33 @@ p{
 
 }
 
+/*CHART IMAGE DESIGN, FOR DIFFERENT SCREEN SIZES*/
+img{
+    background-color: white;
+    margin: solid;
+    border-radius: 15px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
+    width:450px
+    
+
+}
+@media only screen and (max-width: 600px){
+
+    img{
+        background-color: white;
+    margin: solid;
+    border-radius: 15px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
+    margin-bottom: 20px;
+    width: 250px;
+        
+    }
+}
+/*FLEX ITEMS LAYOUT AND DESIGN*/
 .flex-box{
     display: flex;
     flex-wrap: wrap;
@@ -156,7 +189,6 @@ p{
 #chart3{
     width: auto;
 }
-
 
 
 
